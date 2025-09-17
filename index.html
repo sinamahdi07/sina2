@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Form Pendaftaran</title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            background:white;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 150vh;
+        }
+
+        .form-container{
+            background: #ADD8E6;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0.2);
+            width: 350px;
+            box-sizing: border-box;
+            font-weight: bold;
+        }
+
+        h1  {
+            text-align:center;
+            margin-bottom: 20px;
+        }
+
+        label  {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            gap: 8px;
+            font-weight: bold; 
+        }
+
+        input[type="text"]
+        input[type="password"],
+        textarea,
+         select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            box-sizing: border-box;
+         }
+
+        textarea {
+            resize: none;
+            height: 70px;
+        }
+
+        td  {
+            padding-top: 15px;
+            vertical-align: top;
+        }
+
+        .btn-submit {
+         background: #3498db;
+         color: white;
+         border: none;
+         padding: 10px;
+         width:100%;
+         margin-top: 25px;
+         border-radius:  6px;
+         cursor: pointer;
+         font-size: 20px;
+         font-weight: bold;
+        }
+
+        .btn-submit :hover {
+            background: #2980b9;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="form-container">
+    <form action="" method="post">
+        <h1>Form Pendaftaran UKM USU</h1>
+
+           <table>
+            <!--Baris pertama membuat inputan Nama lengkap-->
+               <tr>
+
+                   <td>
+                       <label for="Nama legkap">Nama lengkap:</label>
+                   </td>
+                   <td>
+                       <input type="text" name="Nama lengkap" id="Nama lengkap" placeholder="Masukkan Nama lengkap" required>
+                   </td>
+
+               </tr>
+
+               <tr>
+
+                   <td>
+                       <label for="Nim">Nim:</label>
+                   </td>
+                   <td>
+                        <input type="Nim" name="Nim" id="Nim" placeholder="Masukkan Nim" required>
+                   </td>
+               </tr>
+
+               <tr>
+
+                   <td>
+                        <label for="domisili">Domisili:</label>
+                   </td>
+                   <td>
+                        <textarea name="domisli" id="domisili" placeholder="Masukkan domisi lengkap"></textarea>
+                   </td>
+
+               </tr>
+
+               <tr>
+                  <td>Jenis kelamin:</td>
+
+                  <td>
+                      <label><input type="radio" name="jk" id="jk_laki" value="laki-laki"/>Laki laki</label><br>
+                      <label><input type="radio" name="jk" id="jk_perempuan" value="perempuan"/>Perempuan</label><br>
+                  </td>
+
+               </tr>
+               <tr>
+                   <td>Agama:</td>
+
+                   <td>
+                       <label><input type="checkbox" name="agama" id="agama_islam" />Islam</label><br>
+                       <label><input type="checkbox" name="agama" id="agama_kristen" />Kristen</label><br>
+                       <label><input type="checkbox" name="agama" id="agama_konghucu" />Konghucu</label><br>
+                       <label><input type="checkbox" name="agama" id="agama_hindu" />Hindu</label><br>
+                       <label><input type="checkbox" name="agama" id="agama_buddha" />Buddha</label><br>
+                   </td>
+               </tr>
+
+               <tr>
+                   <td>Fakultas:</td>
+                   <td>
+                       <select name="fakultas" id="fakultas" required>
+                              <option value="" disabled selected>Pilih fakultas</option>
+                              <option value="Teknik">Teknik</option>
+                              <option value="Kedokteran">Kedokteran</option>
+                              <option value="Fasilkom_TI">Fasilkom_TI</option>
+                              <option value="Fmipa">Fmipa</option>
+                              <option value="Hukum">Hukum</option>
+                       </select>
+                   </td>
+               </tr>
+
+               <tr>
+                  <td colspan="2">
+                    <button type="submit" class="btn-submit">Kirim</button></td>
+                  
+               </tr>
+
+           </table>
+
+    </form>
+
+    </div>
+    
+</body>
+</html>
